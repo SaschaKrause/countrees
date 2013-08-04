@@ -1,4 +1,4 @@
 .idea/
-.npm-debzg.log
+.npm-debug.log
 node_modules/
-public/lib/bower/
+public/app/lib/bower/
