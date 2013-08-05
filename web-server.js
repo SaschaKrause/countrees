@@ -32,7 +32,8 @@ app.use(app.router);
 
 // serve index and view partials
 app.get('/', function (req, res) {
-  res.render('index');
+  var isDebugging = (req.query.debug !== undefined);
+  res.render('index', {inProduction: isDebugging});
 });
 
 app.get('/partials/:name', function (req, res) {

@@ -1,8 +1,4 @@
-define([
-  'angular',
-  'controller/main-ctrl'
-], function (angular, controller) {
-  'use strict';
+'use strict';
 
-  return angular.module('myApp', ['controller.main']);
-});
+var mainApp = angular.module('myApp', ['controller.main']);
+

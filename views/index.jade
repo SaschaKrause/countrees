@@ -5,4 +5,14 @@ block body
     | welcome test
   div(ng-controller="MainCtrl")
     | {{message}}
-  script(src='js/lib/bower/requirejs/require.js', data-main="js/config.js")
+
+
+  script(src='js/lib/bower/angular/angular.js')
+  script(src='js/lib/bower/jquery/jquery.js')
+  if inProduction
+    script(src='js/controller/main-ctrl.js')
+    script(src='js/app.js')
+  else
+    script(src='js/dist/app.min.js')
+
+
