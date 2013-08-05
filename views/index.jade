@@ -3,6 +3,6 @@ extends layout
 block body
   div
     | welcome test
-
-  script(src='js/lib/bower/angular/angular.js')
-  script(src='js/lib/bower/jquery/jquery.js')
+  div(ng-controller="MainCtrl")
+    | {{message}}
+  script(src='js/lib/bower/requirejs/require.js', data-main="js/config.js")
