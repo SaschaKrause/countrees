@@ -1,6 +1,22 @@
 FrontEndStack
 =============
 
+### Stack
+
+This seed uses the following technologies:
+
+| Name | Description |
+| --- |--- |
+| NodeJS  | TBD |
+| Experss  | TBD |
+| Less  | TBD |
+| AngularJS  | TBD |
+| Karma  | TBD |
+| Grunt  | TBD |
+| Bower  | TBD |
+| Bootstrap  | TBD |
+| Jade  | TBD |
+
 ### Prerequisites
 
 ##### npm
@@ -18,25 +34,24 @@ npm install -g grunt-cli
 
 ### How to run
 
-* Clone this repository with
+1. Clone this repository with
   ```
   git clone git@github.com:SaschaKrause/FrontEndStack.git
   ```
-* Install all npm depenencies with
+2. Install all npm depenencies with
   ```
   npm install
   ```
-* Install all client-side dependencies with
+3. Install all client-side dependencies with
   ```
   bower install
   ```
-
-* Run tests and build minified javascript file for production with
+4. Run tests and build minified javascript file for production with
    ```
    grunt
    ```
-
-* Now you can start the web server and visit http://localhost:3000
+5. Now you can start the web server and visit http://localhost:3000
   ```
   node web-server.js
   ```
+### How to work with
