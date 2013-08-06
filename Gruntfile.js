@@ -4,15 +4,23 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
-      js: {
-        src: ['public/js/app.js', 'public/js/controller/*'],
+      jsApp: {
+        src: ['public/js/src/app.js', 'public/js/src/controller/*'],
         dest: 'public/js/dist/app.js'
+      },
+      jsLib: {
+        src: [
+          'public/js/lib/bower/angular/angular.js',
+          'public/js/lib/bower/jquery/jquery.js'
+        ],
+        dest: 'public/js/dist/lib.js'
       }
     },
     uglify: {
       my_target: {
         files: {
-          'public/js/dist/app.min.js': ['<%= concat.js.dest %>']
+          'public/js/dist/app.min.js': ['<%= concat.jsApp.dest %>'],
+          'public/js/dist/lib.min.js': ['<%= concat.jsLib.dest %>']
         }
       }
     }

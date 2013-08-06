@@ -8,16 +8,18 @@ block body
   a(href='profile/?debug') view1
   div(ng-view)
 
-  script(src='js/lib/bower/angular/angular.js')
-  script(src='js/lib/bower/jquery/jquery.js')
-
+  // loading scripts
   if inProduction
+    // libs
+    script(src='js/lib/bower/angular/angular.js')
+    script(src='js/lib/bower/jquery/jquery.js')
     // controller
-    script(src='js/controller/main-ctrl.js')
-    script(src='js/controller/profile-ctrl.js')
+    script(src='js/src/controller/main-ctrl.js')
+    script(src='js/src/controller/profile-ctrl.js')
     // app
-    script(src='js/app.js')
+    script(src='js/src/app.js')
   else
+    script(src='js/dist/lib.min.js')
     script(src='js/dist/app.min.js')
 
 
