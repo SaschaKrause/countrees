@@ -1,21 +1,28 @@
-FrontEndStack
+LEAN-FrontEndStack
 =============
+The **LEAN-FrontEndStack** is an opinionated **Seed** for single page apps (SPA).
 
-### Stack
+**LEAN** stands for some of the main technologies used in this seed
+* **L**ess *(extends CSS with dynamic behavior such as variables, mixins, operations and functions)*
+* **E**xpress *(minimal and flexible node.js web application framework)*
+* **A**ngularJS *(clientside MVC based JavaScript Framework)*
+* **N**odeJS *(Event-driven I/O server-side JavaScript environment based on V8)*
+
+### Full Stack Overview
 
 This seed uses the following technologies:
 
-| Name | Description |
-| --- |--- |
-| NodeJS  | TBD |
-| Experss  | TBD |
-| Less  | TBD |
-| AngularJS  | TBD |
-| Karma  | TBD |
-| Grunt  | TBD |
-| Bower  | TBD |
-| Bootstrap  | TBD |
-| Jade  | TBD |
+| Name | Description | Implemented
+| --- |--- | --- |
+| NodeJS  | TBD | ✓
+| Experss  | TBD | ✓
+| Less  | TBD | ✓
+| AngularJS  | TBD | ✓
+| Karma  | TBD | TBD
+| Grunt  | TBD | ✓
+| Bower  | TBD | ✓
+| Bootstrap  | TBD | ✓
+| Jade  | TBD | ✓
 
 ### Prerequisites
 
@@ -46,7 +53,7 @@ npm install -g grunt-cli
   ```
   bower install
   ```
-4. Run tests and build minified javascript file for production with
+4. Run tests and build minified and concatinated JavaScript files for production with
    ```
    grunt
    ```
@@ -54,4 +61,5 @@ npm install -g grunt-cli
   ```
   node web-server.js
   ```
+
 ### How to work with
