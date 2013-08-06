@@ -11,15 +11,15 @@ block body
   // loading scripts
   if inProduction
     // libs
-    script(src='js/lib/bower/angular/angular.js')
-    script(src='js/lib/bower/jquery/jquery.js')
+    script(src='app-src/js/lib/bower/angular/angular.js')
+    script(src='app-src/js/lib/bower/jquery/jquery.js')
     // controller
-    script(src='js/src/controller/main-ctrl.js')
-    script(src='js/src/controller/profile-ctrl.js')
+    script(src='app-src/js/controller/main-ctrl.js')
+    script(src='app-src/js/controller/profile-ctrl.js')
     // app
-    script(src='js/src/app.js')
+    script(src='app-src/js/app.js')
   else
-    script(src='js/dist/lib.min.js')
-    script(src='js/dist/app.min.js')
+    script(src='app-build/js/lib.min.js')
+    script(src='app-build/js/app.min.js')
 
 

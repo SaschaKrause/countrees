@@ -21,9 +21,9 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(require('less-middleware')({
-  dest: path.join(__dirname, 'public', 'styles', 'dest'),
-  src: path.join(__dirname, 'public', 'styles', 'src'),
-  prefix: '/styles/dest',
+  dest: path.join(__dirname, 'public', 'app-build', 'css'),
+  src: path.join(__dirname, 'public', 'app-src', 'less'),
+  prefix: '/app-build/css',
   force: true, // Always re-compile less files on each request.
   compress: true
 })); // needs to be declared before static middleware (in order to get the recompile working)
