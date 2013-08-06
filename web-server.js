@@ -41,6 +41,13 @@ app.get('/partials/:name', function (req, res) {
   res.render('partials/' + name);
 });
 
+// serve index and view partials
+app.get('*', function (req, res) {
+  var isDebugging = (req.query.debug !== undefined);
+  res.render('index', {inProduction: isDebugging});
+});
+
+
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });

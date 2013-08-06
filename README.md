@@ -12,6 +12,9 @@ npm install -g bower
 Also make sure that git is installed as some bower packages require it to be fetched and installed.
 
 ##### Grunt
+```
+npm install -g grunt-cli
+```
 
 ### How to run
 
@@ -28,4 +31,12 @@ Also make sure that git is installed as some bower packages require it to be fet
   bower install
   ```
 
-a
+* Run tests and build minified javascript file for production with
+   ```
+   grunt
+   ```
+
+* Now you can start the web server and visit http://localhost:3000
+  ```
+  node web-server.js
+  ```
