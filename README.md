@@ -31,11 +31,7 @@ This seed uses the following technologies:
 ### Prerequisites
 
 ##### Node and npm
-##### Bower
-Bower depends on Node and npm. It's installed globally using npm:
-```
-npm install -g bower
-```
+
 Also make sure that git is installed as some bower packages require it to be fetched and installed.
 
 ##### Grunt
@@ -45,6 +41,17 @@ npm install -g grunt-cli
 You will also need to install **grunt-init** globally to take advantage of the scaffolding possibilies.
 ```
 npm install -g grunt-init
+```
+
+#### Karma
+```
+npm install -g karma
+```
+
+##### Bower
+Bower depends on Node and npm. It's installed globally using npm:
+```
+npm install -g bower
 ```
 
 ### How to run

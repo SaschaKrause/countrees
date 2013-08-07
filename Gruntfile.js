@@ -10,9 +10,9 @@ module.exports = function (grunt) {
       },
       jsLib: {
         src: [
-          'public/app-src/js/lib/bower/angular/angular.js',
-          'public/app-src/js/lib/bower/jquery/jquery.js',
-          'public/app-src/js/lib/bower/lodash/lodash.js'
+          'public/app-src/lib/bower/angular/angular.js',
+          'public/app-src/lib/bower/jquery/jquery.js',
+          'public/app-src/lib/bower/lodash/lodash.js'
         ],
         dest: 'public/app-build/js/lib.js'
       }
