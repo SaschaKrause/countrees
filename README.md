@@ -80,16 +80,17 @@ For example, if you want to create a new Angular controller you can simply run:
   ```
 
 You will be prompted to enter some basics (e.g. name of controller).
-When finished, grunt creates the controller (and if choose to do: even the corresponding unit test).
-All steps that you need to do from there are documented in the CLI output (e.g. adding the controller module to the main app as dependency).
+When finished, grunt creates the controller (and if choosed to do: even the corresponding unit test).
+All steps that you need to do from that point on are documented in the CLI output and inside the generated files as TODO
+(e.g. adding the controller module to the main app as dependency).
 
 
 
 #### Grunt scaffolding
 
- As mentioned in the "How to work with" section, you can use the grunt automation tasks to create the boilerplate code for you.
+ As mentioned in the "[How to work with](#how-to-work-with)" section, you can use the grunt automation tasks to create the boilerplate code for you.
  A overview of all available scaffolding automations is shown below
 
- | Command | Description
- | --- |--- | --- |
- | ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. |
+| Command | Description |
+| --- |--- |
+| ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. |
