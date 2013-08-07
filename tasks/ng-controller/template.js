@@ -31,13 +31,13 @@ exports.template = function(grunt, init, done) {
     // Prompt for these values.
     {
       name: 'name',
-      message: 'Controller Name without any suffix (like "ctrl" or "controller")',
+      message: 'Controller name (without any suffix like "ctrl" or "controller")',
       validator: /^[a-z][a-zA-Z0-9_]*$/,
       warning: 'Must be a valid variable name and start with a lowercase letter.'
     },
     {
       name: 'suffix',
-      message: 'The suffix for the controller name',
+      message: 'Suffix for the controller name',
       default: defaultSuffix,
       validator: /^[a-z][a-zA-Z0-9_]*$/,
       warning: 'Must be a valid variable name and start with a lowercase letter.'

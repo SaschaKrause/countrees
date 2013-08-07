@@ -8,6 +8,10 @@ The **LEAN-FrontEndStack** is an opinionated **Seed** for single page apps (SPA)
 * **A**ngularJS *(clientside MVC based JavaScript Framework)*
 * **N**odeJS *(Event-driven I/O server-side JavaScript environment based on V8)*
 
+### Aims
+
+TBD
+
 ### Full Stack Overview
 
 This seed uses the following technologies:
@@ -76,6 +80,16 @@ For example, if you want to create a new Angular controller you can simply run:
   ```
 
 You will be prompted to enter some basics (e.g. name of controller).
-When finished, grunt created the controller (and if choose to do: even the corresponding unit test).
-All steps that you need to do from there, are documented in the CLI output (e.g. adding the controller module to the main app as dependency).
+When finished, grunt creates the controller (and if choose to do: even the corresponding unit test).
+All steps that you need to do from there are documented in the CLI output (e.g. adding the controller module to the main app as dependency).
 
+
+
+#### Grunt scaffolding
+
+ As mentioned in the "How to work with" section, you can use the grunt automation tasks to create the boilerplate code for you.
+ A overview of all available scaffolding automations is shown below
+
+ | Command | Description
+ | --- |--- | --- |
+ | ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. |

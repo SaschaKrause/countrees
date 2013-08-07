@@ -1,7 +1,10 @@
+(function () {
 
-var mainCtrl = angular.module('controller.main', []);
+  var mainCtrl = angular.module('controller.main', []);
 
-mainCtrl.controller('MainCtrl', ["$scope", function ($scope) {
-  $scope.message = "Hello World.";
-}]);
+  mainCtrl.controller('MainCtrl', ["$scope", function ($scope) {
+    $scope.message = "Hello World.";
+  }]);
+
+})();
 
