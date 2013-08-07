@@ -11,7 +11,8 @@ module.exports = function (grunt) {
       jsLib: {
         src: [
           'public/app-src/js/lib/bower/angular/angular.js',
-          'public/app-src/js/lib/bower/jquery/jquery.js'
+          'public/app-src/js/lib/bower/jquery/jquery.js',
+          'public/app-src/js/lib/bower/lodash/lodash.js'
         ],
         dest: 'public/app-build/js/lib.js'
       }
@@ -29,9 +30,8 @@ module.exports = function (grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadTasks("./tasks");
 
   // Default task(s).
-  grunt.registerTask('default', ['concat','uglify', 'add-ng-controller']);
+  grunt.registerTask('default', ['concat','uglify']);
 
 };

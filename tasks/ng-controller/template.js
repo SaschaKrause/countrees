@@ -53,6 +53,12 @@ exports.template = function(grunt, init, done) {
     // Files to copy (and process).
     var files = init.filesToCopy(props);
 
+    // TODO: find a way to modify the existing sources, so that no manual step is needed (e.g. extending the app.js)
+
+   /* if (grunt.file.expand(name).length) {
+      grunt.warn('Existing files may be overwritten!');
+    }
+    */
     // Actually copy (and process) files.
     init.copyAndProcess(files, props, {noProcess: 'libs/**'});
 

@@ -8,7 +8,7 @@ The **LEAN-FrontEndStack** is an opinionated **Seed** for single page apps (SPA)
 * **A**ngularJS *(clientside MVC based JavaScript Framework)*
 * **N**odeJS *(Event-driven I/O server-side JavaScript environment based on V8)*
 
-### Aims
+### Goals and Aims
 
 TBD
 
@@ -93,4 +93,4 @@ All steps that you need to do from that point on are documented in the CLI outpu
 
 | Command | Description |
 | --- |--- |
-| ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. |
+| ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. If you choosed to create the corresponding unit test as well, it will be placed in ```public/app-test/js/controller/```  |
