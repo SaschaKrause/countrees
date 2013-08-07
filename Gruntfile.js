@@ -25,6 +25,11 @@ module.exports = function (grunt) {
         }
       }
     },
+    jshint: {
+      app: {
+        src: ['public/app-src/js/**/*']
+      }
+    },
     karma: {
       unit: {
         configFile: 'public/app-test/config/karma.conf.js'
@@ -35,9 +40,11 @@ module.exports = function (grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-karma');
 
   // Default task(s).
   grunt.registerTask('default', ['karma','concat','uglify']);
+  grunt.registerTask('check', ['jshint','karma']);
 
 };

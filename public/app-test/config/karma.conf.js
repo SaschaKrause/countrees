@@ -1,12 +1,11 @@
 module.exports = function(karma) {
-  karma.configure({
+  karma.set({
     // base path, that will be used to resolve files and exclude
     basePath: '../../',
 
     // list of files / patterns to load in the browser
     files: [
       'app-src/lib/bower/angular/angular.js',
-      'app-src/lib/bower/angular/angular-*.js',
       'app-test/lib/angular-mocks.js',
       'app-src/js/**/*.js',
       'app-test/unit/**/*.js'
@@ -20,7 +19,7 @@ module.exports = function(karma) {
     // use dots reporter, as travis terminal does not support escaping sequences
     // possible values: 'dots', 'progress', 'junit', 'teamcity'
     // CLI --reporters progress
-    reporters: ['progress'],
+    reporters: ['dots'],
 
     // web server port
     // CLI --port 9876
@@ -37,7 +36,7 @@ module.exports = function(karma) {
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
     // CLI --log-level debug
-    logLevel: LOG_INFO,
+    logLevel: karma.LOG_INFO,
 
     // enable / disable watching file and executing tests whenever any file changes
     // CLI --auto-watch --no-auto-watch

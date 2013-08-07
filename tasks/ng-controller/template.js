@@ -41,6 +41,11 @@ exports.template = function(grunt, init, done) {
       default: defaultSuffix,
       validator: /^[a-z][a-zA-Z0-9_]*$/,
       warning: 'Must be a valid variable name and start with a lowercase letter.'
+    },
+    {
+      name: 'spec',
+      message: 'Create controller test/spec',
+      default: 'Y/n'
     }
 
   ], function(err, props) {
@@ -60,7 +65,10 @@ exports.template = function(grunt, init, done) {
     }
     */
     // Actually copy (and process) files.
-    init.copyAndProcess(files, props, {noProcess: 'libs/**'});
+    // TODO: exclude the test if props.spec === false
+    var specFile = /y/i.test(props.spec) ? 'controller-spec.js' : '';
+    grunt.log.writeln("spec: " + /y/i.test(props.spec) + " - " +specFile);
+    init.copyAndProcess(files, props, {noProcess: specFile});
 
     // All done!
     done();

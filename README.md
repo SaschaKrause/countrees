@@ -1,6 +1,6 @@
-LEAN-FrontEndStack
+FrontEndStack.LEAN
 =============
-The **LEAN-FrontEndStack** is an opinionated **Seed** for single page apps (SPA).
+**FrontEndStack.LEAN** is an opinionated **Seed** for creating single page apps (SPA) fast and well structured.
 
 **LEAN** is an acronym for some of the main technologies used in this seed
 * **L**ess *(extends CSS with dynamic behavior such as variables, mixins, operations and functions)*
@@ -59,26 +59,12 @@ npm install -g bower
 
 ### How to run
 
-1. Clone this repository with
-  ```
-  git clone git@github.com:SaschaKrause/FrontEndStack.git
-  ```
-2. Install all npm depenencies with
-  ```
-  npm install
-  ```
-3. Install all client-side dependencies with
-  ```
-  bower install
-  ```
-4. Run tests and build minified and concatinated JavaScript files for production with
-   ```
-   grunt
-   ```
-5. Now you can start the web server and visit http://localhost:3000
-  ```
-  node web-server.js
-  ```
+1. Clone this repository with ``` git clone git@github.com:SaschaKrause/FrontEndStack.git ```
+2. Install all npm depenencies with ``` npm install ```
+3. Install all client-side dependencies with ``` bower install ```
+4. Run tests and build minified and concatinated JavaScript files for production with ``` grunt ```
+5. Now you can start the web server with ``` node web-server.js ``` and visit http://localhost:3000
+
 
 ### How to work with
 

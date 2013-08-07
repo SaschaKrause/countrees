@@ -1,3 +1,4 @@
 {
-  "controller-template.js": "public/app-src/js/controller/{%= name %}-{%= suffix %}.js"
+  "controller-template.js": "public/app-src/js/controller/{%= name %}-{%= suffix %}.js",
+  "controller-spec.js": "public/app-test/unit/controller/{%= name %}-{%= suffix %}-spec.js"
 }
