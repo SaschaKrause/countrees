@@ -1,6 +1,6 @@
 FrontEndStack.LEAN
 =============
-**FrontEndStack.LEAN** is an opinionated **Seed** for creating single page apps (SPA) fast and well structured.
+**FrontEndStack.LEAN** is an opinionated **Seed** for creating well structured single page apps (SPA) in a fast and maintainable way.
 
 **LEAN** is an acronym for some of the main technologies used in this seed
 * **L**ess *(extends CSS with dynamic behavior such as variables, mixins, operations and functions)*
@@ -35,13 +35,12 @@ This seed uses the following technologies:
 
 ##### Node and npm
 
-Also make sure that git is installed as some bower packages require it to be fetched and installed.
 
 ##### Grunt
 ```
 npm install -g grunt-cli
 ```
-You will also need to install **grunt-init** globally to take advantage of the scaffolding possibilies.
+You will also need to install **grunt-init** globally to take advantage of the provided scaffolding possibilies.
 ```
 npm install -g grunt-init
 ```
@@ -59,6 +58,7 @@ npm install -g bower
 
 ### How to run
 
+All you need to do is follow these simple steps to get up and running (when all [Prerequisites](#prerequisites) are installed successfully)
 1. Clone this repository with ``` git clone git@github.com:SaschaKrause/FrontEndStack.git ```
 2. Install all npm depenencies with ``` npm install ```
 3. Install all client-side dependencies with ``` bower install ```
