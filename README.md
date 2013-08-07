@@ -59,6 +59,7 @@ npm install -g bower
 ### How to run
 
 All you need to do is follow these simple steps to get up and running (when all [Prerequisites](#prerequisites) are installed successfully)
+
 1. Clone this repository with ``` git clone git@github.com:SaschaKrause/FrontEndStack.git ```
 2. Install all npm depenencies with ``` npm install ```
 3. Install all client-side dependencies with ``` bower install ```
