@@ -8,9 +8,12 @@ The **LEAN-FrontEndStack** is an opinionated **Seed** for single page apps (SPA)
 * **A**ngularJS *(clientside MVC based JavaScript Framework)*
 * **N**odeJS *(Event-driven I/O server-side JavaScript environment based on V8)*
 
-### Goals and Aims
+### Why?
 
-TBD
+Focus on creating your actual app, instead of losing time doing boilerplate and repetitive work all by yourself.
+What you got out of the box is this (among other cool things):
+* TBD
+
 
 ### Full Stack Overview
 

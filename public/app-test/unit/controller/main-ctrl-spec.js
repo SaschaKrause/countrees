@@ -12,9 +12,7 @@ describe('Main Controller', function () {
     });
   });
 
-
   beforeEach(module('controller.main'));
-
 
   describe('MainCtrl', function () {
     var scope, ctrl;
@@ -25,11 +23,8 @@ describe('Main Controller', function () {
       ctrl = $controller('MainCtrl', {$scope: scope});
     }));
 
-    it('should convert boolean values to unicode checkmark or cross', function () {
-      console.log("läuft: " + scope.message);
+    it('should contain ', function () {
       expect( scope.message).toEqual('Hello World.');
     });
   });
 });
-
-//karma start $BASE_DIR/../config/karma.conf.js

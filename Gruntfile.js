@@ -24,14 +24,20 @@ module.exports = function (grunt) {
           'public/app-build/js/lib.min.js': ['<%= concat.jsLib.dest %>']
         }
       }
+    },
+    karma: {
+      unit: {
+        configFile: 'public/app-test/config/karma.conf.js'
+      }
     }
   });
 
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-karma');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat','uglify']);
+  grunt.registerTask('default', ['karma','concat','uglify']);
 
 };

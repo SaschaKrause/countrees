@@ -1,8 +1,8 @@
 'use strict';
 
 var mainApp = angular.module('myApp', [
-    // constants
-    'constant.routes'
+    // config
+    'config.routes'
   ,
     // controller
     'controller.main',
@@ -11,27 +11,11 @@ var mainApp = angular.module('myApp', [
     // service
 ]);
 
-/*
-var routes = [
-  {
-    mapping: '/profile',
-    templateUrl: 'partials/profile' + '/?debug',
-    controller: 'ProfileCtrl'
-  },
-  {
-    mapping: '/asd',
-    templateUrl: 'partials/profile' + '/?debug',
-    controller: 'ProfileCtrl'
-  }
-];
-*/
 
+mainApp.config(['$routeProvider', '$locationProvider', 'routesCfg', function ($routeProvider, $locationProvider, routesCfg) {
 
-mainApp.config(['$routeProvider', '$locationProvider', 'routes', function ($routeProvider, $locationProvider, routes) {
-
-  // iterate over the routes (configured as constants in routes.js)
-  _.forEach(routes, function (route) {
-
+  // iterate over the routes (configured as constants in config/routes-cfg.js)
+  _.forEach(routesCfg, function (route) {
     $routeProvider.
         when(route.mapping, {
           templateUrl: route.templateUrl,
@@ -47,23 +31,11 @@ mainApp.config(['$routeProvider', '$locationProvider', 'routes', function ($rout
   $locationProvider.html5Mode(true);
 }]);
 
-(function () {
-
-  var mainCtrl = angular.module('controller.main', []);
-
-  mainCtrl.controller('MainCtrl', ["$scope", function ($scope) {
-    $scope.message = "Hello World.";
-  }]);
-
-})();
+angular.module('controller.main', []).controller('MainCtrl', ["$scope", function ($scope) {
+  $scope.message = "Hello World.";
+}]);
 
 
-(function () {
-
-  var profileCtrl = angular.module('controller.profile', []);
-
-  profileCtrl.controller('ProfileCtrl', ["$scope", function ($scope) {
-    $scope.message = "The profile view.";
-  }]);
-
-})();
+angular.module('controller.profile', []).controller('ProfileCtrl', ["$scope", function ($scope) {
+  $scope.message = "The profile view.";
+}]);
