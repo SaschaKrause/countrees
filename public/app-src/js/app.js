@@ -1,8 +1,11 @@
 'use strict';
 
 var mainApp = angular.module('myApp', [
+  // controller dependencies
   'controller.main',
   'controller.profile'
+
+  // service dependencies
 ]);
 
 mainApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {

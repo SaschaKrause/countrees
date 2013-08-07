@@ -1,0 +1,3 @@
+{
+  "controller.js": "public/app-src/js/controller/{%= name %}-{%= suffix %}.js"
+}

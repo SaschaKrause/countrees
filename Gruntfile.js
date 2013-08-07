@@ -29,8 +29,9 @@ module.exports = function (grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadTasks("./tasks");
 
   // Default task(s).
-  grunt.registerTask('default', ['concat','uglify']);
+  grunt.registerTask('default', ['concat','uglify', 'add-ng-controller']);
 
 };
