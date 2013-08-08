@@ -2,14 +2,15 @@
   "use strict";
 
   var mainApp = angular.module('myApp', [
-    // config
-    'config.routes',
+      // config
+      'config.routes',
 
-    // controller
-    'controller.main',
-    'controller.profile'
+      // controller
+      'controller.main',
+      'controller.profile',
 
-    // service
+      // service
+      'service.rest'
   ]);
 
 

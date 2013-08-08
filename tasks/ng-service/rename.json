@@ -1,0 +1,4 @@
+{
+  "service-template.js": "public/app-src/js/services/{%= name %}-{%= suffix %}.js",
+  "service-spec.js": "public/app-test/unit/services/{%= name %}-{%= suffix %}-spec.js"
+}

@@ -16,27 +16,27 @@ exports.after = 'DONE :)';
 exports.template = function(grunt, init, done) {
 
   var pkg = grunt.file.readJSON('package.json');
-  var defaultSuffix = "ctrl";
+  var defaultSuffix = "service";
 
 
-  init.process({type: 'ng-ctrl'}, [
+  init.process({type: 'ng-service'}, [
     // Prompt for these values.
     {
       name: 'name',
-      message: 'Controller name (without any suffix like "ctrl" or "controller")',
+      message: 'Service name (without any suffix like "service")',
       validator: /^[a-z][a-zA-Z0-9_]*$/,
       warning: 'Must be a valid variable name and start with a lowercase letter.'
     },
     {
       name: 'suffix',
-      message: 'Suffix for the controller name',
+      message: 'Suffix for the service name',
       default: defaultSuffix,
       validator: /^[a-z][a-zA-Z0-9_]*$/,
       warning: 'Must be a valid variable name and start with a lowercase letter.'
     },
     {
       name: 'spec',
-      message: 'Create controller test/spec',
+      message: 'Create service test/spec',
       default: 'Y/n'
     }
 
@@ -58,15 +58,15 @@ exports.template = function(grunt, init, done) {
     */
     // Actually copy (and process) files.
     // TODO: exclude the test if props.spec === false
-    var specFile = /y/i.test(props.spec) ? 'controller-spec.js' : '';
+    var specFile = /y/i.test(props.spec) ? 'service-spec.js' : '';
     grunt.log.writeln("spec: " + /y/i.test(props.spec) + " - " +specFile);
-    init.copyAndProcess(files, props, {noProcess: specFile});
+    init.copyAndProcess(files, props, {});
 
     // All done!
     done();
 
-    grunt.log.writeln('Successfully created controller: ' + props.capitalizedName + props.capitalizedSuffix + ' ('+props.name + '-'+props.suffix+'.js)' );
-    grunt.log.writeln('Please add the controller-module dependency "controller.'+props.name+'" to your mainApp ('+props.angularMainAppFilePath+') ');
+    grunt.log.writeln('Successfully created service: ' + props.capitalizedName + props.capitalizedSuffix + ' ('+props.name + '-'+props.suffix+'.js)' );
+    grunt.log.writeln('Please add the service-module dependency "service.'+props.name+'" to your mainApp ('+props.angularMainAppFilePath+') ');
 
   });
 

@@ -3,6 +3,7 @@
 /* jasmine specs for controllers go here */
 describe('MainCtrl', function () {
 
+  beforeEach(module('service.rest'));
   beforeEach(module('controller.main'));
 
   var scope, ctrl;
@@ -15,6 +16,7 @@ describe('MainCtrl', function () {
 
   it('should contain the correct message', function () {
     expect(scope.message).toEqual('Hello World.');
+    expect(scope.dings).toEqual(42);
   });
 
 });
