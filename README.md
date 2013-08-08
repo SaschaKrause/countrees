@@ -5,8 +5,8 @@ FrontEndStack.LEAN
 **LEAN** is an acronym for some of the main technologies used in this seed
 * **L**ess *(extends CSS with dynamic behavior such as variables, mixins, operations and functions)*
 * **E**xpress *(minimal and flexible node.js web application framework)*
-* **A**ngularJS *(clientside MVC based JavaScript Framework)*
-* **N**odeJS *(Event-driven I/O server-side JavaScript environment based on V8)*
+* **A**ngularJS *(clientside MVC based JavaScript framework)*
+* **N**odeJS *(event-driven I/O server-side JavaScript environment based on V8)*
 
 ### Why?
 
