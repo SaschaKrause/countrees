@@ -58,7 +58,7 @@ npm install -g bower
 
 ### How to run
 
-All you need to do is follow these simple steps to get up and running (when all [Prerequisites](#prerequisites) are installed successfully)
+All you need to do is follow these steps to get up and running:
 
 1. Clone this repository with ``` git clone git@github.com:SaschaKrause/FrontEndStack.git ```
 2. Install all npm depenencies with ``` npm install ```
@@ -68,7 +68,6 @@ All you need to do is follow these simple steps to get up and running (when all 
 
 
 ### How to work with
-
 
 Use the available grunt automation tasks to create the boilerplate code for you.
 For example, if you want to create a new Angular controller you can simply run:
@@ -90,4 +89,4 @@ All steps that you need to do from that point on are documented in the CLI outpu
 
 | Command | Description |
 | --- |--- |
-| ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. If you choosed to create the corresponding unit test as well, it will be placed in ```public/app-test/js/controller/```  |
+| ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. If you choosed to create the corresponding unit test as well, it will be placed in ```public/app-test/unit/controller/```  |

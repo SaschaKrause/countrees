@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
       jsApp: {
-        src: ['public/app-src/js/app.js', 'public/app-src/js/controller/*'],
+        src: ['public/app-src/js/app.js', 'public/app-src/js/controllers/*'],
         dest: 'public/app-build/js/app.js'
       },
       jsLib: {
