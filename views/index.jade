@@ -1,27 +1,38 @@
 extends layout
 
 block body
-  div
-    | welcome test
-  div(ng-controller="MainCtrl")
-    | {{message}}
-  a(href='profile/?debug') view1
-  div(ng-view)
+  header
+    nav
+      div(class="container")
+        ul(class="nav navbar-nav")
+          li
+            a(href='profile/?debug') view1
+          li
+            a(href='profile/?debug') view12
+    section(id="overview-section")
+      div(class="container")
+        h1
+          | Welcome text
+        div(ng-controller="MainCtrl")
+          | {{message}}
+
+  section(id="content", class="container")
+    div(ng-view)
 
     // loading scripts
     //if inProduction
     // libs
-    script(src='app-src/lib/bower/angular/angular.js')
-    script(src='app-src/lib/bower/jquery/jquery.js')
-    script(src='app-src/lib/bower/lodash/lodash.js')
-    //services
-    script(src='app-src/js/services/rest-service.js')
-    // controllers
-    script(src='app-src/js/controllers/main-ctrl.js')
-    script(src='app-src/js/controllers/profile-ctrl.js')
-    // app
-    script(src='app-src/js/configs/routes-cfg.js')
-    script(src='app-src/js/app.js')
+  script(src='app-src/lib/bower/angular/angular.js')
+  script(src='app-src/lib/bower/jquery/jquery.js')
+  script(src='app-src/lib/bower/lodash/lodash.js')
+  //services
+  script(src='app-src/js/services/rest-service.js')
+  // controllers
+  script(src='app-src/js/controllers/main-ctrl.js')
+  script(src='app-src/js/controllers/profile-ctrl.js')
+  // app
+  script(src='app-src/js/configs/routes-cfg.js')
+  script(src='app-src/js/app.js')
 //  else
 //    script(src='app-build/js/lib.min.js')
 //    script(src='app-build/js/app.min.js')

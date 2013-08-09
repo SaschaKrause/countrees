@@ -90,3 +90,12 @@ All steps that you need to do from that point on are documented in the CLI outpu
 | Command | Description |
 | --- |--- |
 | ``` grunt-init ./tasks/ng-controller ```| Creates an AngularJS controller in ```public/app-src/js/controller/```. If you choosed to create the corresponding unit test as well, it will be placed in ```public/app-test/unit/controller/```  |
+
+
+
+### Ideas
+
+* Maybe creating other FrontEndStacks...
+  * somethings that seems promissing, is changing Less & Bootstrap to Sass & [Foundation](http://foundation.zurb.com/)
+  * what about Rails? Could be powerfull as well in combination with AngularJS
+  * ...
