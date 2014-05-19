@@ -2,6 +2,9 @@
   "use strict";
 
   var mainApp = angular.module('myApp', [
+      // lib
+      'ui.router',
+
       // config
       'config.routes',
 
@@ -14,23 +17,23 @@
   ]);
 
 
-  mainApp.config(['$routeProvider', '$locationProvider', 'routesCfg', function ($routeProvider, $locationProvider, routesCfg) {
+   mainApp.config(['$stateProvider', '$urlRouterProvider', 'routesCfg', function ($stateProvider, $urlRouterProvider, routesCfg) {
 
     // iterate over the routes (configured as constants in config/routes-cfg.js)
     _.forEach(routesCfg, function (route) {
-      $routeProvider.
-          when(route.mapping, {
+      $stateProvider.
+          state(route.state, {
+            url: route.url,
             templateUrl: route.templateUrl,
-            controller: route.controller
+            controller: route.controller, 
+            views : route.views
           });
     });
+    
+    $urlRouterProvider.otherwise("/init"); 
 
-    $routeProvider.otherwise({
-      redirectTo: '/'
-    });
-
-    $locationProvider.html5Mode(true);
   }]);
+   
 
 })();
 

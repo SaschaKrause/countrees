@@ -7,9 +7,9 @@ block body
 			div.container
 				ul.nav.navbar-nav
 					li
-						a(ui-sref="app.profile") profile
+						a(href='profile/') view1
 					li
-						a(ui-sref='view2') view2
+						a(href='profile/') view12
 		section(id="overview-section")
 			div.container
 				h1
@@ -17,19 +17,14 @@ block body
 				div(ng-controller="MainCtrl")
 					| {{message}}
 
-	//- render page partial in here
-	div(ui-view)
+	section.container(id="content")
+		div(ng-view)
 
 		
 	//- libs
+	script(src='app-src/lib/bower/angular/angular.js')
 	script(src='app-src/lib/bower/jquery/jquery.js')
 	script(src='app-src/lib/bower/lodash/lodash.js')
-
-	//- angular
-	script(src='app-src/lib/bower/angular/angular.js')
-	script(src='app-src/lib/bower/angular-cookies/angular-cookies.js')
-	script(src='app-src/lib/bower/angular-ui-router/release/angular-ui-router.js')
-
 	//- services
 	script(src='app-src/js/services/rest-service.js')
 	//- controllers
