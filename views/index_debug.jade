@@ -7,9 +7,9 @@ block body
 			div.container
 				ul.nav.navbar-nav
 					li
-						a(href='profile/') view1
+						a(ui-sref='app.profile') view1
 					li
-						a(href='profile/') view12
+						a(ui-sref='app.initialisation-main') view12
 		section(id="overview-section")
 			div.container
 				h1
@@ -18,12 +18,13 @@ block body
 					| {{message}}
 
 	section.container(id="content")
-		div(ng-view)
+		div(ui-view)
 
 		
 	//- libs
 	script(src='app-src/lib/bower/angular/angular.js')
-	script(src='app-src/lib/bower/jquery/jquery.js')
+	script(src='app-src/lib/bower/angular-ui-router/release/angular-ui-router.js')
+	script(src='app-src/lib/bower/jquery/dist/jquery.js')
 	script(src='app-src/lib/bower/lodash/lodash.js')
 	//- services
 	script(src='app-src/js/services/rest-service.js')

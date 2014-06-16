@@ -7,6 +7,9 @@ var http = require('http');
 var path = require('path');
 
 var app = module.exports = express();
+var Firebase = require('firebase');
+var myRootRef = new Firebase('https://myprojectname.firebaseIO-demo.com/');
+myRootRef.set("hello world!");
 
 console.log("NODE_ENV: " + process.env.NODE_ENV);
 
@@ -17,7 +20,7 @@ console.log("NODE_ENV: " + process.env.NODE_ENV);
  */
 
 // all environments
-app.set('port', process.env.PORT || 3003);
+app.set('port', process.env.PORT || 3004);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.logger('dev'));
