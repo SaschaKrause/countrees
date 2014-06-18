@@ -8,17 +8,21 @@ angular.module("config.routes", []).constant('routesCfg', [
 			templateUrl: 'partials/layout_app'
 		},
 		{
-			state: 'plain',
+			state: 'list',
 			abstarct: true,
-			templateUrl: 'partials/plain-layout'
+			templateUrl: 'partials/layout_list'
 		},
 		{
-			state: 'slim',
+			state: 'counter-detail',
 			abstarct: true,
-			templateUrl: 'partials/slim-layout'
+			templateUrl: 'partials/layout_counter-detail'
 		},
 
-		// user
+		// releases
+		{state: 'list.releases',														url: '/releases',																					views: {"content": {templateUrl: 'partials/list_releases',													controller: 'ReleasesCtrl' } } },
+
+		{state: 'counter-detail.releases',									url: '/releases/{releaseId}',															views: {"content": {templateUrl: 'partials/counter-detail_release',									controller: 'ReleasesCtrl' } } },
+
 		{state: 'app.profile',															url: '/profile',																					views: {"content": {templateUrl: 'partials/profile',																controller: 'ProfileCtrl' } } },
 		{state: 'app.initialisation-main',									url: '/init',																							views: {"content": {templateUrl: 'partials/init',																		controller: 'ProfileCtrl'} } },
 	]);

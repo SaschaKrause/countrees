@@ -1,0 +1,8 @@
+| DETAIL 
+br
+br
+| {{page.detailedRelease.default.name}}: {{page.detailedRelease.default.country}}: {{page.detailedRelease.default.release_date}}
+hr
+
+div(ng-repeat="additionalData in page.detailedRelease.additionals")
+	{{additionalData.country}}: {{additionalData.release_date}}

@@ -1,7 +1,6 @@
-angular.module('controller.main', []).controller('MainCtrl', ["$scope", 'RestService', function ($scope, RestService) {
+angular.module('controller.main', []).controller('MainCtrl', ["$scope", 'AbstractRestService', function ($scope, AbstractRestService) {
   "use strict";
 
   $scope.message = "Hello World.";
-  $scope.dings = RestService.answer;
 }]);
 

@@ -2,23 +2,13 @@ extends layout
 
 block body
 
-	header
-		nav
-			div.container
-				ul.nav.navbar-nav
-					li
-						a(ui-sref='app.profile') view1
-					li
-						a(ui-sref='app.initialisation-main') view12
-		section(id="overview-section")
-			div.container
-				h1
-					| Welcome text
-				div(ng-controller="MainCtrl")
-					| {{message}}
 
-	section.container(id="content")
-		div(ui-view)
+	script()
+		var BACKEND_URL = "https://radiant-fire-4047.firebaseio.com";
+		
+
+
+	div(ui-view)
 
 		
 	//- libs
@@ -28,9 +18,11 @@ block body
 	script(src='app-src/lib/bower/lodash/lodash.js')
 	//- services
 	script(src='app-src/js/services/rest-service.js')
+	script(src='app-src/js/services/release-service.js')
 	//- controllers
 	script(src='app-src/js/controllers/main-ctrl.js')
 	script(src='app-src/js/controllers/profile-ctrl.js')
+	script(src='app-src/js/controllers/pages/releases-ctrl.js')
 	//- app
 	script(src='app-src/js/configs/routes-cfg.js')
 	script(src='app-src/js/app.js')

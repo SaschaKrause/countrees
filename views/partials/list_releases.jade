@@ -1,0 +1,6 @@
+div
+	| rls
+
+	div(ng-repeat="(key, val) in page.releases")
+		a(ng-click="showDetailedRelease(key)")
+			| {{val.default.name}}: {{val.default.release_date}}

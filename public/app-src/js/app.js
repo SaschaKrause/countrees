@@ -9,11 +9,14 @@
       'config.routes',
 
       // controller
+      'controller.page.releases',
+      
       'controller.main',
       'controller.profile',
 
       // service
-      'service.rest'
+      'service.abstract-rest',
+      'service.release'
   ]);
 
 
@@ -33,7 +36,13 @@
     $urlRouterProvider.otherwise("/init"); 
 
   }]);
-   
+
+
+  mainApp.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+  }]);
+     
 
 })();
 
