@@ -10,5 +10,5 @@ html(ng-app="myApp")
 		link(rel='stylesheet', href='app-src/lib/bower/font-awesome/css/font-awesome.css')
 		link(rel='stylesheet', href='app-build/css/app.css')
 		
-	body
+	body(ng-controller="BodyStyleCtrl", class="{{pageName}}")
 		block body

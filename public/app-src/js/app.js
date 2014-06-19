@@ -10,6 +10,9 @@
 
       // controller
       'controller.page.releases',
+
+      'controller.include.navigation',
+      'controller.misc.bodystyle',
       
       'controller.main',
       'controller.profile',

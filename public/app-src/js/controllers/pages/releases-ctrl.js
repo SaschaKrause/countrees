@@ -22,7 +22,7 @@ angular.module('controller.page.releases', []).controller('ReleasesCtrl', ["$sco
 
 
   $scope.showDetailedRelease = function(releaseId) {
-  	$state.go('counter-detail.releases', {releaseId: releaseId});
+  	$state.go('counter-detail.release', {releaseId: releaseId});
   }
 
 

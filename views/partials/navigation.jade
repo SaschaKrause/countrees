@@ -1,0 +1,35 @@
+nav.navbar.navbar-default.ctrs-navigation(role='navigation', ng-controller="NavigationCtrl")
+	.container
+		.navbar-header
+			button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+
+			//- a.navbar-brand(href='#', class="hidden-sm")
+			//- 	img(src="/images/logosmall.png", width="120")
+			//- a.navbar-brand(href='#', class="hidden-xs hidden-lg hidden-md")
+			//- 	img(src="/images/icons/pixformance_x.png", height="20")
+
+		#bs-example-navbar-collapse-1.collapse.navbar-collapse
+			ul.nav.navbar-nav
+				li
+					a(ui-sref='app.profile') view1
+				li
+					a(ui-sref='list.releases') releases
+
+			ul.nav.navbar-nav.navbar-right
+				li.dropdown()
+					a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+						i(class="icon-user")
+						| asdsad
+						b.caret
+					ul.dropdown-menu
+						li
+							a(ui-sref="app.profile", style="cursor:pointer;")
+								| user
+						li.divider(ng-if="!isClubOwner")
+						li
+							a(ng-click="logout()", style="cursor:pointer;")
+								| aaa	

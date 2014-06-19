@@ -19,9 +19,9 @@ angular.module("config.routes", []).constant('routesCfg', [
 		},
 
 		// releases
-		{state: 'list.releases',														url: '/releases',																					views: {"content": {templateUrl: 'partials/list_releases',													controller: 'ReleasesCtrl' } } },
+		{state: 'list.releases',														url: '/release/list',																			views: {"content": {templateUrl: 'partials/list_releases',													controller: 'ReleasesCtrl' } } },
 
-		{state: 'counter-detail.releases',									url: '/releases/{releaseId}',															views: {"content": {templateUrl: 'partials/counter-detail_release',									controller: 'ReleasesCtrl' } } },
+		{state: 'counter-detail.release',										url: '/releases/{releaseId}',															views: {"content": {templateUrl: 'partials/counter-detail_release',									controller: 'ReleasesCtrl' } } },
 
 		{state: 'app.profile',															url: '/profile',																					views: {"content": {templateUrl: 'partials/profile',																controller: 'ProfileCtrl' } } },
 		{state: 'app.initialisation-main',									url: '/init',																							views: {"content": {templateUrl: 'partials/init',																		controller: 'ProfileCtrl'} } },

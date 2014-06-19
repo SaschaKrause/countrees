@@ -1,15 +1,9 @@
-header
-	nav
-		div.container
-			ul.nav.navbar-nav
-				li
-					a(ui-sref='app.profile') view1
-				li
-					a(ui-sref='list.releases') releases
-	section(id="overview-section")
-		div.container
-			h1
-				| list layout
+span(ng-include="'partials/navigation.jade'", class="navigation")
+	
+section(id="overview-section")
+	div.container
+		h1
+			| list layout
 
 section.container(id="content", class="container")
 	div(ui-view="content", class="wrapper")
