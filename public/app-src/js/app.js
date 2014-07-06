@@ -19,6 +19,7 @@
 
       // service
       'service.abstract-rest',
+      'service.countree',
       'service.release'
   ]);
 
@@ -32,7 +33,13 @@
             url: route.url,
             templateUrl: route.templateUrl,
             controller: route.controller, 
-            views : route.views
+            views : route.views, 
+            onEnter: function() {
+              console.log('onEnter_'+route.state, true);
+            }, 
+            onExit: function() {
+              console.log('onExit_'+route.state, true);
+            }
           });
     });
     

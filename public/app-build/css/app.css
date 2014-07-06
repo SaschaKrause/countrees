@@ -1,5 +1,7 @@
-.counter-detail_release{background-color:#7aa14c}
-.ctrs-navigation{margin-bottom:0;background-color:#93b868}
-body{background-color:#f9f9f9;color:#181818}
-header nav{background-color:#f9f9f9}
-header #overview-section{background-color:#6ea448;color:#f9f9f9}
+.counter-detail_release{background-color:#282733}.counter-detail_release .ctrs-detailed-release-counter{margin-top:10px;text-align:center;color:rgba(255,255,255,0.8);font-family:'Roboto',sans-serif;font-weight:200}.counter-detail_release .ctrs-detailed-release-counter .ctrs-counter-number{font-size:45px}.counter-detail_release .ctrs-detailed-release-counter .ctrs-counter-number.large{font-size:80px}
+.counter-detail_release .ctrs-detailed-release-counter .ctrs-counter-number-suffix{color:rgba(255,255,255,0.42);font-size:40px}
+.counter-detail_release .ctrs-detailed-release-title{margin-top:50px;text-align:center;font-family:'Roboto Condensed' sans-serif;font-weight:200;font-size:28px}
+.ctrs-navigation{margin-bottom:0;border:none;background-color:#282733}.ctrs-navigation ul.navbar-nav li a{color:#929292}.ctrs-navigation ul.navbar-nav li a:hover{color:white}
+body{background-color:#f9f9f9;color:#9e9e9e;font-family:'Arial',sans-serif}
+header nav{background-color:#fff}
+header #overview-section{background-color:#6ea448;color:#929292}

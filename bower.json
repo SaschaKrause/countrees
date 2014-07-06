@@ -11,6 +11,7 @@
     "angular-translate-loader-static-files": "~0.1.5",
     "angular-cookies": "~1.0.8",
     "angular-bootstrap": "~0.11.0",
-    "firebase": "~1.0.17"
+    "firebase": "~1.0.17",
+    "countree": "git@github.com:SaschaKrause/Countree.js.git"
   }
 }

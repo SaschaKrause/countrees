@@ -1,8 +1,26 @@
-| DETAIL 
-br
-br
-| {{page.detailedRelease.default.name}}: {{page.detailedRelease.default.country}}: {{page.detailedRelease.default.release_date}}
-hr
+div(class="ctrs-detailed-release-title")
+	|{{page.detailed.release.default.name}}
 
-div(ng-repeat="additionalData in page.detailedRelease.additionals")
-	{{additionalData.country}}: {{additionalData.release_date}}
+div(class="ctrs-detailed-release-counter")
+	span(class="ctrs-counter-number large")
+		| {{page.detailed.countResult.formattedTime().getDays()}} 
+	span(class="ctrs-counter-number-suffix")
+		| Days - 
+	span(class="ctrs-counter-number")
+		| {{page.detailed.countResult.formattedTime().getHours(1)}}
+	span(class="ctrs-counter-number-suffix")
+		|:
+	span(class="ctrs-counter-number")
+		| {{page.detailed.countResult.formattedTime().getMinutes(2)}}
+	span(class="ctrs-counter-number-suffix")
+		|:
+	span(class="ctrs-counter-number")
+		| {{page.detailed.countResult.formattedTime().getSeconds(2)}}
+
+div(class="ctrs-detailed-release-info")
+
+//- | {{page.detailed.release.default.country}}: {{page.detailed.release.default.release_date}}
+//- hr
+
+//- div(ng-repeat="additionalData in page.detailed.release.additionals")
+//- 	{{additionalData.country}}: {{additionalData.release_date}}
